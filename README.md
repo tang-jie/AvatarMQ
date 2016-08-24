@@ -22,7 +22,7 @@ AvatarMQ是基于Netty构建的分布式消息队列系统，支持多个生产�
 
 **AvatarMQ English Introduction:**
 
-AvatarMQ is a distributed message queuing system based on Netty(java nio framework), which supports message routing and delivery between multiple producers and multiple consumers.
+AvatarMQ is a distributed message queue system based on Netty(java nio framework), which supports message routing and delivery between multiple producers and multiple consumers.
 
 1. A number of consumers can form a consumer cluster, the producer can send messages to this consumer cluster. And each consumer only consumes the message that is sent by the producer.
 
