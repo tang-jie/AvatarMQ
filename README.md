@@ -34,7 +34,7 @@ AvatarMQ is a distributed message queue system based on Netty(java nio framework
 
 5. Producer, consumer test case reference: com.newlandframework.avatarmq.test package.
 
-6. Start AvatarMQ message processing and forwarding server (AvatarMQServerStartup), in order to carry out the distributed message queuing system message routing, delivery.
+6. Start AvatarMQ message processing and forwarding server (AvatarMQServerStartup), in order to carry out the distributed message queue system message routing, delivery.
 
 7. Based on the Netty master slave event thread pool model, network transmission in the message serialization using Kryo serialization framework, to further enhance the performance of message serialization.
 
