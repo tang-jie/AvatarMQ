@@ -1,5 +1,5 @@
 # AvatarMQ
-AvatarMQ中文简介：
+**AvatarMQ中文简介：**
 
 AvatarMQ是基于Netty构建的分布式消息队列系统，支持多个生产者和多个消费者之间的消息路由、传递。
 
@@ -20,7 +20,7 @@ AvatarMQ是基于Netty构建的分布式消息队列系统，支持多个生产�
 本人的博客地址：http://www.cnblogs.com/jietang/ 欢迎访问！<br><br>
 
 
-AvatarMQ English introduction:
+**AvatarMQ English Introduction:**
 
 AvatarMQ is a distributed message queuing system based on Netty(java nio framework), which supports message routing and delivery between multiple producers and multiple consumers.
 
