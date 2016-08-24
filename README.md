@@ -17,10 +17,7 @@ AvatarMQ是基于Netty构建的分布式消息队列系统，支持多个生产�
 
 7、基于Netty的主从事件线程池模型，网络传输中的消息序列化采用Kryo序列化框架，进一步提升消息序列化性能。
 
-本人的博客地址：http://www.cnblogs.com/jietang/ 欢迎访问！
-
-
-
+本人的博客地址：http://www.cnblogs.com/jietang/ 欢迎访问！<br><br>
 
 
 AvatarMQ English introduction:
