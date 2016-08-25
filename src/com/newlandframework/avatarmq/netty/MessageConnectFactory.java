@@ -112,7 +112,7 @@ public class MessageConnectFactory {
                 }
             });
 
-            System.out.println("producer ip address:" + this.remoteAddr.toString());
+            System.out.println("ip address:" + this.remoteAddr.toString());
             connected = true;
         } catch (InterruptedException e) {
             e.printStackTrace();
