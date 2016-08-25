@@ -22,6 +22,10 @@
 * Based on the Netty master slave event thread pool model, network transmission in the message serialization using Kryo serialization framework, to further enhance the performance of message serialization.
 
 ----------
+## AvatarMQ相关博客文章
+http://www.cnblogs.com/jietang/p/5808735.html
+
+----------
 
 ## Author
 唐洁（tangjie） http://www.cnblogs.com/jietang/
