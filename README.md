@@ -25,7 +25,7 @@
 ## AvatarMQ In Action
 **Netty构建分布式消息队列（AvatarMQ）设计指南之架构篇**
 
-**(Architecture of Netty to build a distributed message queue system (AvatarMQ) design guide)**
+**Architecture of Netty to build a distributed message queue system (AvatarMQ) design guide**
 
 http://www.cnblogs.com/jietang/p/5808735.html
 
