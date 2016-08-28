@@ -2,6 +2,7 @@
 ![](AvatarMQ-logo.png)
 ## AvatarMQ中文简介：
 **AvatarMQ是基于Netty构建的分布式消息队列系统，支持多个生产者和多个消费者之间的消息路由、传递。**
+* AvatarMQ基于Java语言进行编写，网络通讯依赖Netty。
 * 若干个消费者可以组成一个消费者集群，生产者可以向这个消费者集群投递消息。并且每个消费者只消费自己关注的生产者发送的消息。
 * 支持动态新增、删除生产者、消费者。
 * 消息投递支持负载均衡策略。
@@ -9,11 +10,13 @@
 * 生产者、消费者测试用例参考：com.newlandframework.avatarmq.test包。
 * 启动AvatarMQ的消息处理转发服务器（AvatarMQServerStartup）之后，才能进行分布式消息队列系统的消息路由、传递。
 * 基于Netty的主从事件线程池模型，网络传输中的消息序列化采用Kryo序列化框架，进一步提升消息序列化性能。
+* Broker消息的投递，目前支持严格的消息顺序。其中Broker还支持消息的缓冲派发，即Broker会缓存一定数量的消息之后，再批量分配给对此消息感兴趣的消费者。
 
 ----------
 
 ## AvatarMQ English Introduction:
 **AvatarMQ is a distributed message queue system based on Netty(java nio framework), which supports message routing and delivery between multiple producers and multiple consumers.**
+* AvatarMQ based on the preparation of Java language, network communications rely on Netty.
 * A number of consumers can form a consumer cluster, the producer can send messages to this consumer cluster. And each consumer only consumes the message that is sent by the producer.
 * To support the dynamic add, delete the producers, consumers.
 * Message delivery support load balancing strategy.
@@ -21,6 +24,7 @@
 * Producer, consumer test case reference: com.newlandframework.avatarmq.test package.
 * Start AvatarMQ message processing and forwarding server (AvatarMQServerStartup), in order to carry out the distributed message queue system message routing, delivery.
 * Based on the Netty master slave event thread pool model, network transmission in the message serialization using Kryo serialization framework, to further enhance the performance of message serialization.
+* Broker message delivery, currently supports strict message order. Broker also supports message buffer distribution, that is, Broker will cache a certain number of messages, and then batch distribution to the message of interest to consumers.
 
 ----------
 ## AvatarMQ In Action
