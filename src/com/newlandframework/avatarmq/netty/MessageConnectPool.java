@@ -31,7 +31,7 @@ public class MessageConnectPool extends GenericObjectPool<MessageConnectFactory>
 
     private static MessageConnectPool pool = null;
     private static Properties messageConnectConfigProperties = null;
-    private static String configPropertiesString = "avatarmq.messageconnect.properties";
+    private static String configPropertiesString = "com/newlandframework/avatarmq/netty/avatarmq.messageconnect.properties";
     private static String serverAddress = "";
 
     public static MessageConnectPool getMessageConnectPoolInstance() {

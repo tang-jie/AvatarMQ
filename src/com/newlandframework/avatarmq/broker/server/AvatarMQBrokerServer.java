@@ -54,7 +54,7 @@ import io.netty.util.concurrent.DefaultEventExecutorGroup;
 public class AvatarMQBrokerServer extends BrokerParallelServer implements RemotingServer {
 
     private ThreadFactory threadBossFactory = new ThreadFactoryBuilder()
-            .setNameFormat("AvatarMQBroker[BOSSSelector]-%d")
+            .setNameFormat("AvatarMQBroker[BossSelector]-%d")
             .setDaemon(true)
             .build();
 
