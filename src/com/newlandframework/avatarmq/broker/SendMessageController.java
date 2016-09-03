@@ -92,7 +92,7 @@ public class SendMessageController implements Callable<Void> {
                     try {
                         flushTask.compareAndSet(false, true);
                     } catch (Exception e) {
-                        System.out.printf("SendMessageTaskMonitor happen exception\n", e);
+                        System.out.println("SendMessageTaskMonitor happen exception");
                     }
                 }
             }, 1000 * 1, period);
