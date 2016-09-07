@@ -39,6 +39,7 @@ http://www.cnblogs.com/jietang/p/5808735.html
 **Analysis of the principle of distributed message queue implementation by Netty**
 
 http://www.cnblogs.com/jietang/p/5847458.html
+
 ----------
 ## Usage at a glance
 This simple example for AvatarMQ Producer:
