@@ -34,6 +34,11 @@
 
 http://www.cnblogs.com/jietang/p/5808735.html
 
+**Netty构建分布式消息队列实现原理浅析**
+
+**Analysis of the principle of distributed message queue implementation by Netty**
+
+http://www.cnblogs.com/jietang/p/5847458.html
 ----------
 ## Usage at a glance
 This simple example for AvatarMQ Producer:
