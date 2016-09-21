@@ -55,13 +55,15 @@ public class MessageConsumerHandler extends MessageEventWrapper<Object> {
 
             ResponseMessage message = (ResponseMessage) msg;
             ConsumerAckMessage result = (ConsumerAckMessage) hook.callBackMessage(message);
-            RequestMessage request = new RequestMessage();
-            request.setMsgId(message.getMsgId());
-            request.setMsgSource(MessageSource.AvatarMQConsumer);
-            request.setMsgType(MessageType.AvatarMQMessage);
-            request.setMsgParams(result);
+            if (result != null) {
+                RequestMessage request = new RequestMessage();
+                request.setMsgId(message.getMsgId());
+                request.setMsgSource(MessageSource.AvatarMQConsumer);
+                request.setMsgType(MessageType.AvatarMQMessage);
+                request.setMsgParams(result);
 
-            ctx.writeAndFlush(request);
+                ctx.writeAndFlush(request);
+            }
         }
     }
 }

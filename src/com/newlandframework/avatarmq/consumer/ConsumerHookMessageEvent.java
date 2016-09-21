@@ -17,6 +17,7 @@ package com.newlandframework.avatarmq.consumer;
 
 import com.newlandframework.avatarmq.core.HookMessageEvent;
 import com.newlandframework.avatarmq.model.ResponseMessage;
+import com.newlandframework.avatarmq.msg.BaseMessage;
 import com.newlandframework.avatarmq.msg.ConsumerAckMessage;
 import com.newlandframework.avatarmq.msg.Message;
 
@@ -37,8 +38,12 @@ public class ConsumerHookMessageEvent extends HookMessageEvent<Object> {
 
     public Object callBackMessage(Object obj) {
         ResponseMessage response = (ResponseMessage) obj;
-        ConsumerAckMessage result = hook.hookMessage((Message) response.getMsgParams());
-        result.setMsgId(((Message) response.getMsgParams()).getMsgId());
-        return result;
+        if (response.getMsgParams() instanceof Message) {
+            ConsumerAckMessage result = hook.hookMessage((Message) response.getMsgParams());
+            result.setMsgId(((Message) response.getMsgParams()).getMsgId());
+            return result;
+        } else {
+            return null;
+        }
     }
 }

@@ -59,7 +59,6 @@ public class SemaphoreCache {
             TimeUnit.MILLISECONDS.sleep(hookTime);
         } catch (ExecutionException ex) {
             Logger.getLogger(SemaphoreCache.class.getName()).log(Level.SEVERE, null, ex);
-
         } catch (InterruptedException ex) {
             Logger.getLogger(SemaphoreCache.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -69,7 +69,7 @@ public class Message extends BaseMessage implements Serializable {
 
     public String toString() {
         ReflectionToStringBuilder.setDefaultStyle(ToStringStyle.SHORT_PREFIX_STYLE);
-        return ReflectionToStringBuilder.toStringExclude(this, new String[]{"content"});
+        return ReflectionToStringBuilder.toStringExclude(this, new String[]{"body"});
     }
 
     public int hashCode() {
